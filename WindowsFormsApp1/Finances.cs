@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.Entity;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Windows.Forms;
@@ -65,61 +66,30 @@ namespace WindowsFormsApp1
 
         private void ZooFinances()
         {
-            decimal zooFinances = 0;
-            DataTable animalsDateTable = dataSet.Tables[animalsTable];
-            DataTable animalTypeDateTable = dataSet.Tables[animalTypeTable];
+
+            var result = GetAnimalByType("Tiger") * GetFoodPrice("Meat") * GetFoodRatePerDay("Tiger")
+                + (GetAnimalByType("Pinguin") * GetFoodPrice("Fish") * GetFoodRatePerDay("Pinguin"))
+                + (GetAnimalByType("Giraffe") * GetFoodPrice("Plant") * GetFoodRatePerDay("Giraffe"));
+            textBox2.Text = string.Format($"Tigers: {GetAnimalByType("Tiger")}, Pinguins: {GetAnimalByType("Tiger")}, Giraffe: {GetAnimalByType("Tiger")}");
+            textBox1.Text = string.Format(result + "$");
+        }
+
+        private double GetFoodPrice(string foodType)
+        {
             DataTable foodPriceDateTable = dataSet.Tables[foodPriceTable];
-            var animalsQuery = animalsDateTable.AsEnumerable().
-                Select(animal => new
-                {
-                    animalId = animal.Field<int>("Id"),
-                    animalName = animal.Field<string>("Name"),
-                    animalType = animal.Field<string>("Animal_Type")
-                });
+            return (double)foodPriceDateTable.AsEnumerable().Where(p => p.Field<string>("Food_Type") == foodType).Select(p => p.Field<decimal>("Food_Price")).FirstOrDefault();
+        }
 
-            IEnumerable<DataRow> animalsQuery2 =
-                    from Animal_Type in animalsDateTable.AsEnumerable()
-                    select Animal_Type;
+        private int GetAnimalByType(string animalType)
+        {
+            DataTable animalsDateTable = dataSet.Tables[animalsTable];
+            return animalsDateTable.AsEnumerable().Where(p => p.Field<string>("Animal_Type") == animalType).Count();
+        }
 
-            var Tigers = animalsQuery2.Where(p => p.Field<string>("Animal_Type") == "Tiger").ToList().Count;
-            var Penguins = animalsQuery2.Where(p => p.Field<string>("Animal_Type") == "Penguin").ToList().Count;
-            var Giraffes = animalsQuery2.Where(p => p.Field<string>("Animal_Type") == "Giraffe").ToList().Count;
-
-            IEnumerable<DataRow> animalTypeQuery =
-                    from Food_Rate_Per_Day in animalTypeDateTable.AsEnumerable()
-                    select Food_Rate_Per_Day;
-
-            //Console.WriteLine("Products of size 'L':");
-            //foreach (DataRow product in largeProducts)
-            //{
-            //    Console.WriteLine(product.Field<string>("Name"));
-            //}
-
-            //foreach (var animalsInfo in animalsQuery)
-            //{
-            //    Console.WriteLine("animalId: {0} animalName: {1} animalType: {2} ",
-            //        animalsInfo.animalId, animalsInfo.animalName, animalsInfo.animalType);
-            //}
-
-            var foodPriceQuery = foodPriceDateTable.AsEnumerable().
-                Select(food => new
-                {
-                    foodType = food.Field<string>("Food_Type"),
-                    foodPrice = food.Field<decimal>("Food_Price")
-                });
-            IEnumerable<DataRow> foodPriceQuery2 =
-                    from Food_Type in foodPriceDateTable.AsEnumerable()
-                    select Food_Type;
-            var foodTypes = foodPriceQuery2.ToList().Count;
-            foreach (var foodInfo in foodPriceQuery)
-            {
-                if (foodInfo.foodType == "Meat") { zooFinances += Tigers * foodInfo.foodPrice; }
-                if (foodInfo.foodType == "Fish") { zooFinances += Penguins * foodInfo.foodPrice; }
-                if (foodInfo.foodType == "Plant") { zooFinances += Giraffes * foodInfo.foodPrice; }
-            }
-
-            //Общая стоимость питания зоопарка в день = (Animal_Type)*(Food_Price)*(Food_Rate_Per_Day)
-            textBox1.Text = zooFinances.ToString();
+        private double GetFoodRatePerDay(string animalType)
+        {
+            DataTable animalTypeDateTable = dataSet.Tables[animalTypeTable];
+            return animalTypeDateTable.AsEnumerable().Where(p => p.Field<string>("Animal_Type") == animalType).Select(p => p.Field<double>("Food_Rate_Per_Day")).FirstOrDefault();
         }
 
         private void UpdateDataGridViewButtonColumnValue(DataGridView dataGridView)
@@ -422,6 +392,20 @@ namespace WindowsFormsApp1
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "tabControl1_SelectedError!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ReloadData(animalsTable, dataGridView1, sqlDataAdapter1);
+                ReloadData(animalTypeTable, dataGridView2, sqlDataAdapter2);
+                ReloadData(foodPriceTable, dataGridView3, sqlDataAdapter3);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
