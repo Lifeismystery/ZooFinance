@@ -3,12 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooFinances", "WindowsFormsApp1\ZooFinances.csproj", "{FC0C36C7-A63A-43B5-99E3-569F911A15D5}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6610364B-D245-4595-923E-63C1733A8416}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZooFinances", "ZooFinances\ZooFinances.csproj", "{FC0C36C7-A63A-43B5-99E3-569F911A15D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6AB95C12-F725-4331-ABF0-EFD873D9D245}
+		SolutionGuid = {1C355620-ACBB-4B9C-A16E-35940E0D8A13}
 	EndGlobalSection
 EndGlobal

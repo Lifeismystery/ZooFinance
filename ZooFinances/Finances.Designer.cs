@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace ZooFinances
 {
     partial class Finances
     {
@@ -318,11 +318,11 @@ namespace WindowsFormsApp1
             // 
             // animalTypeTableBindingSource
             // 
-            this.animalTypeTableBindingSource.DataSource = typeof(WindowsFormsApp1.AnimalTypeTable);
+            this.animalTypeTableBindingSource.DataSource = typeof(ZooFinances.AnimalTypeTable);
             // 
             // animalsTableBindingSource
             // 
-            this.animalsTableBindingSource.DataSource = typeof(WindowsFormsApp1.AnimalsTable);
+            this.animalsTableBindingSource.DataSource = typeof(ZooFinances.AnimalsTable);
             // 
             // animalTypeDataGridViewTextBoxColumn
             // 
@@ -348,7 +348,7 @@ namespace WindowsFormsApp1
             // 
             // foodPriceTableBindingSource
             // 
-            this.foodPriceTableBindingSource.DataSource = typeof(WindowsFormsApp1.FoodPriceTable);
+            this.foodPriceTableBindingSource.DataSource = typeof(ZooFinances.FoodPriceTable);
             // 
             // foodRatePerDayDataGridViewTextBoxColumn
             // 

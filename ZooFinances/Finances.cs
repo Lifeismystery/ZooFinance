@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace ZooFinances
 {
     public partial class Finances : Form
     {
@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
 
         private void Finances_Load(object sender, EventArgs e)
         {
-            sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\lifei\source\repos\Lifeismystery\ZooFinance\WindowsFormsApp1\ZooDatabase.mdf;Integrated Security=True");
+            sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\lifei\source\repos\Lifeismystery\ZooFinance\ZooFinances\ZooDatabase.mdf;Integrated Security=True");
             sqlConnection.Open();
 
             sqlDataAdapter1 = new SqlDataAdapter($"SELECT * FROM {animalsTable}", sqlConnection);

@@ -7,23 +7,25 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WindowsFormsApp1
+namespace ZooFinances
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class FoodPriceTable
+    public partial class AnimalTypeTable
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public FoodPriceTable()
+        public AnimalTypeTable()
         {
-            this.AnimalTypeTables = new HashSet<AnimalTypeTable>();
+            this.AnimalsTables = new HashSet<AnimalsTable>();
         }
     
+        public string Animal_Type { get; set; }
         public string Food_Type { get; set; }
-        public decimal Food_Price { get; set; }
+        public double Food_Rate_Per_Day { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<AnimalTypeTable> AnimalTypeTables { get; set; }
+        public virtual ICollection<AnimalsTable> AnimalsTables { get; set; }
+        public virtual FoodPriceTable FoodPriceTable { get; set; }
     }
 }
