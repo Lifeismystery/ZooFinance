@@ -44,7 +44,8 @@ namespace ZooFinances
 
         private void Finances_Load(object sender, EventArgs e)
         {
-            sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\lifei\source\repos\Lifeismystery\ZooFinance\ZooFinances\ZooDatabase.mdf;Integrated Security=True");
+
+            sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\ZooDatabase.mdf;Integrated Security=True");
             sqlConnection.Open();
 
             sqlDataAdapter1 = new SqlDataAdapter($"SELECT * FROM {animalsTable}", sqlConnection);
