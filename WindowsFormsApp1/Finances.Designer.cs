@@ -30,33 +30,59 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Finances));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.addAnimalTextBox1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.animalListMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.foodListMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.database1DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewButtonColumn3 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewComboBoxColumn1 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.animalTypeTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.animalsTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.animalTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.foodTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.foodPriceTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.foodRatePerDayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.foodTypeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.foodPriceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).BeginInit();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.animalTypeTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.animalsTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foodPriceTableBindingSource)).BeginInit();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileMenuItem,
-            this.editMenuItem1,
-            this.viewMenuItem1});
+            this.fileMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1015, 28);
@@ -66,121 +92,312 @@ namespace WindowsFormsApp1
             // fileMenuItem
             // 
             this.fileMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem2,
-            this.toolStripSeparator1,
             this.exitMenuItem});
             this.fileMenuItem.Name = "fileMenuItem";
-            this.fileMenuItem.Size = new System.Drawing.Size(44, 24);
+            this.fileMenuItem.Size = new System.Drawing.Size(46, 24);
             this.fileMenuItem.Text = "File";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(217, 26);
-            this.toolStripMenuItem2.Text = "toolStripMenuItem2";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(214, 6);
             // 
             // exitMenuItem
             // 
             this.exitMenuItem.Name = "exitMenuItem";
-            this.exitMenuItem.Size = new System.Drawing.Size(217, 26);
+            this.exitMenuItem.Size = new System.Drawing.Size(116, 26);
             this.exitMenuItem.Text = "Exit";
             this.exitMenuItem.Click += new System.EventHandler(this.exitMenuItem_Click);
             // 
-            // editMenuItem1
+            // toolStrip1
             // 
-            this.editMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addAnimalTextBox1,
-            this.toolStripTextBox2});
-            this.editMenuItem1.Name = "editMenuItem1";
-            this.editMenuItem1.Size = new System.Drawing.Size(47, 24);
-            this.editMenuItem1.Text = "Edit";
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButton1});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 28);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1015, 27);
+            this.toolStrip1.TabIndex = 5;
+            this.toolStrip1.Text = "toolStrip1";
             // 
-            // addAnimalTextBox1
+            // toolStripButton1
             // 
-            this.addAnimalTextBox1.Name = "addAnimalTextBox1";
-            this.addAnimalTextBox1.Size = new System.Drawing.Size(177, 26);
-            this.addAnimalTextBox1.Text = "Add animal";
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(62, 24);
+            this.toolStripButton1.Text = "Refresh";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
-            // toolStripTextBox2
+            // tabPage3
             // 
-            this.toolStripTextBox2.Name = "toolStripTextBox2";
-            this.toolStripTextBox2.Size = new System.Drawing.Size(177, 26);
-            this.toolStripTextBox2.Text = "Delete animal";
-            // 
-            // viewMenuItem1
-            // 
-            this.viewMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.animalListMenuItem1,
-            this.foodListMenuItem3});
-            this.viewMenuItem1.Name = "viewMenuItem1";
-            this.viewMenuItem1.Size = new System.Drawing.Size(53, 24);
-            this.viewMenuItem1.Text = "View";
-            // 
-            // animalListMenuItem1
-            // 
-            this.animalListMenuItem1.Name = "animalListMenuItem1";
-            this.animalListMenuItem1.Size = new System.Drawing.Size(154, 26);
-            this.animalListMenuItem1.Text = "Animal list";
-            this.animalListMenuItem1.Click += new System.EventHandler(this.animalListMenuItem1_Click);
-            // 
-            // foodListMenuItem3
-            // 
-            this.foodListMenuItem3.Name = "foodListMenuItem3";
-            this.foodListMenuItem3.Size = new System.Drawing.Size(154, 26);
-            this.foodListMenuItem3.Text = "Food list";
-            this.foodListMenuItem3.Click += new System.EventHandler(this.foodListMenuItem3_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 31);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.Visible = false;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(12, 31);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView2.TabIndex = 3;
-            this.dataGridView2.Visible = false;
+            this.tabPage3.Controls.Add(this.dataGridView3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1007, 595);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Food Price";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // dataGridView3
             // 
+            this.dataGridView3.AutoGenerateColumns = false;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(12, 205);
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.foodTypeDataGridViewTextBoxColumn1,
+            this.foodPriceDataGridViewTextBoxColumn,
+            this.dataGridViewButtonColumn3});
+            this.dataGridView3.DataSource = this.foodPriceTableBindingSource;
+            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView3.Location = new System.Drawing.Point(3, 3);
             this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.RowHeadersWidth = 51;
             this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(625, 342);
+            this.dataGridView3.Size = new System.Drawing.Size(1001, 589);
             this.dataGridView3.TabIndex = 4;
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
+            this.dataGridView3.UserAddedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView3_UserAddedRow);
+            // 
+            // dataGridViewButtonColumn3
+            // 
+            this.dataGridViewButtonColumn3.HeaderText = "Command";
+            this.dataGridViewButtonColumn3.MinimumWidth = 6;
+            this.dataGridViewButtonColumn3.Name = "dataGridViewButtonColumn3";
+            this.dataGridViewButtonColumn3.ReadOnly = true;
+            this.dataGridViewButtonColumn3.Text = "Delete";
+            this.dataGridViewButtonColumn3.Width = 125;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.dataGridView2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1007, 595);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Animal Types";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.animalTypeDataGridViewTextBoxColumn,
+            this.foodTypeDataGridViewTextBoxColumn,
+            this.foodRatePerDayDataGridViewTextBoxColumn,
+            this.dataGridViewButtonColumn2});
+            this.dataGridView2.DataSource = this.animalTypeTableBindingSource;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersWidth = 51;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(1001, 589);
+            this.dataGridView2.TabIndex = 4;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            this.dataGridView2.UserAddedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView2_UserAddedRow);
+            // 
+            // dataGridViewButtonColumn2
+            // 
+            this.dataGridViewButtonColumn2.HeaderText = "Command";
+            this.dataGridViewButtonColumn2.MinimumWidth = 6;
+            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
+            this.dataGridViewButtonColumn2.Text = "Delete";
+            this.dataGridViewButtonColumn2.Width = 125;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1007, 595);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "All Animals";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewComboBoxColumn1,
+            this.dataGridViewButtonColumn1});
+            this.dataGridView1.DataSource = this.animalsTableBindingSource;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1001, 589);
+            this.dataGridView1.TabIndex = 6;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.UserAddedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.dataGridView1_UserAddedRow);
+            // 
+            // dataGridViewComboBoxColumn1
+            // 
+            this.dataGridViewComboBoxColumn1.DataPropertyName = "Animal_Type";
+            this.dataGridViewComboBoxColumn1.DataSource = this.animalTypeTableBindingSource;
+            this.dataGridViewComboBoxColumn1.DisplayMember = "Animal_Type";
+            this.dataGridViewComboBoxColumn1.HeaderText = "Animal_Type";
+            this.dataGridViewComboBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewComboBoxColumn1.Name = "dataGridViewComboBoxColumn1";
+            this.dataGridViewComboBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewComboBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewComboBoxColumn1.ValueMember = "Animal_Type";
+            this.dataGridViewComboBoxColumn1.Width = 125;
+            // 
+            // dataGridViewButtonColumn1
+            // 
+            this.dataGridViewButtonColumn1.HeaderText = "Command";
+            this.dataGridViewButtonColumn1.MinimumWidth = 6;
+            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
+            this.dataGridViewButtonColumn1.Text = "Delete";
+            this.dataGridViewButtonColumn1.Width = 125;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 55);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1015, 624);
+            this.tabControl1.TabIndex = 6;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.Width = 125;
+            // 
+            // animalTypeTableBindingSource
+            // 
+            this.animalTypeTableBindingSource.DataSource = typeof(WindowsFormsApp1.AnimalTypeTable);
+            // 
+            // animalsTableBindingSource
+            // 
+            this.animalsTableBindingSource.DataSource = typeof(WindowsFormsApp1.AnimalsTable);
+            // 
+            // animalTypeDataGridViewTextBoxColumn
+            // 
+            this.animalTypeDataGridViewTextBoxColumn.DataPropertyName = "Animal_Type";
+            this.animalTypeDataGridViewTextBoxColumn.HeaderText = "Animal_Type";
+            this.animalTypeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.animalTypeDataGridViewTextBoxColumn.Name = "animalTypeDataGridViewTextBoxColumn";
+            this.animalTypeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // foodTypeDataGridViewTextBoxColumn
+            // 
+            this.foodTypeDataGridViewTextBoxColumn.DataPropertyName = "Food_Type";
+            this.foodTypeDataGridViewTextBoxColumn.DataSource = this.foodPriceTableBindingSource;
+            this.foodTypeDataGridViewTextBoxColumn.DisplayMember = "Food_Type";
+            this.foodTypeDataGridViewTextBoxColumn.HeaderText = "Food_Type";
+            this.foodTypeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.foodTypeDataGridViewTextBoxColumn.Name = "foodTypeDataGridViewTextBoxColumn";
+            this.foodTypeDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.foodTypeDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.foodTypeDataGridViewTextBoxColumn.ValueMember = "Food_Type";
+            this.foodTypeDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // foodPriceTableBindingSource
+            // 
+            this.foodPriceTableBindingSource.DataSource = typeof(WindowsFormsApp1.FoodPriceTable);
+            // 
+            // foodRatePerDayDataGridViewTextBoxColumn
+            // 
+            this.foodRatePerDayDataGridViewTextBoxColumn.DataPropertyName = "Food_Rate_Per_Day";
+            this.foodRatePerDayDataGridViewTextBoxColumn.HeaderText = "Food_Rate_Per_Day";
+            this.foodRatePerDayDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.foodRatePerDayDataGridViewTextBoxColumn.Name = "foodRatePerDayDataGridViewTextBoxColumn";
+            this.foodRatePerDayDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // foodTypeDataGridViewTextBoxColumn1
+            // 
+            this.foodTypeDataGridViewTextBoxColumn1.DataPropertyName = "Food_Type";
+            this.foodTypeDataGridViewTextBoxColumn1.HeaderText = "Food_Type";
+            this.foodTypeDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.foodTypeDataGridViewTextBoxColumn1.Name = "foodTypeDataGridViewTextBoxColumn1";
+            this.foodTypeDataGridViewTextBoxColumn1.Width = 125;
+            // 
+            // foodPriceDataGridViewTextBoxColumn
+            // 
+            this.foodPriceDataGridViewTextBoxColumn.DataPropertyName = "Food_Price";
+            this.foodPriceDataGridViewTextBoxColumn.HeaderText = "Food_Price";
+            this.foodPriceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.foodPriceDataGridViewTextBoxColumn.Name = "foodPriceDataGridViewTextBoxColumn";
+            this.foodPriceDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.textBox1);
+            this.tabPage4.Controls.Add(this.label1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1007, 595);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Finances";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(64, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(162, 43);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 1;
             // 
             // Finances
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1015, 679);
-            this.Controls.Add(this.dataGridView3);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Finances";
             this.Text = "Finances";
+            this.Load += new System.EventHandler(this.Finances_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSetBindingSource)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.animalTypeTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.animalsTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foodPriceTableBindingSource)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -189,18 +406,34 @@ namespace WindowsFormsApp1
         #endregion
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem exitMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem addAnimalTextBox1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripTextBox2;
-        private ToolStripMenuItem viewMenuItem1;
-        private ToolStripMenuItem animalListMenuItem1;
-        private ToolStripMenuItem foodListMenuItem3;
-        private DataGridView dataGridView1;
-        private DataGridView dataGridView2;
+        private ToolStrip toolStrip1;
+        private ToolStripButton toolStripButton1;
+        private BindingSource animalTypeTableBindingSource;
+        private BindingSource animalsTableBindingSource;
+        private BindingSource database1DataSetBindingSource;
+        private BindingSource foodPriceTableBindingSource;
+        private TabPage tabPage3;
         private DataGridView dataGridView3;
+        private DataGridViewButtonColumn dataGridViewButtonColumn3;
+        private TabPage tabPage2;
+        private DataGridView dataGridView2;
+        private TabPage tabPage1;
+        private DataGridView dataGridView1;
+        private TabControl tabControl1;
+        private DataGridViewTextBoxColumn foodTypeDataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn foodPriceDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn animalTypeDataGridViewTextBoxColumn;
+        private DataGridViewComboBoxColumn foodTypeDataGridViewTextBoxColumn;
+        private DataGridViewTextBoxColumn foodRatePerDayDataGridViewTextBoxColumn;
+        private DataGridViewButtonColumn dataGridViewButtonColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewComboBoxColumn dataGridViewComboBoxColumn1;
+        private DataGridViewButtonColumn dataGridViewButtonColumn1;
+        private TabPage tabPage4;
+        private TextBox textBox1;
+        private Label label1;
     }
 }
 

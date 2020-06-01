@@ -17,14 +17,6 @@ namespace WindowsFormsApp1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Finances());
-            GetFoodExpenses();
-        }
-
-        private static double GetFoodExpenses()
-        {
-            //new Finances.GetAnimals();
-            var foodExpenses = 10.0;
-            return foodExpenses;
         }
     }
 }
