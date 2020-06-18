@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZooFinances.Model;
+using ZooFinances.Preserver;
 
 namespace ZooFinances
 {
@@ -16,7 +18,9 @@ namespace ZooFinances
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Finances());
+
+            var presenter = new LogbookPresenter(new Finances(), new LogbookModel());
+            presenter.Run();
         }
     }
 }
