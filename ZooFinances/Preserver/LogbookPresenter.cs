@@ -14,7 +14,7 @@ namespace ZooFinances.Preserver
 {
     public class LogbookPresenter : Form
     {
-        private readonly Finances _view;
+        private Finances _view;
         private LogbookModel _model;
 
         public LogbookPresenter(Finances view, LogbookModel model)

@@ -131,9 +131,6 @@
       <DependentUpon>AppDate.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\AnimalsTable.datasource" />
-    <None Include="Properties\DataSources\AnimalTypeTable.datasource" />
-    <None Include="Properties\DataSources\FoodPriceTable.datasource" />
     <None Include="Properties\DataSources\ZooFinances.Model.AnimalsTable.datasource" />
     <None Include="Properties\DataSources\ZooFinances.Model.AnimalTypeTable.datasource" />
     <None Include="Properties\DataSources\ZooFinances.Model.FoodPriceTable.datasource" />
