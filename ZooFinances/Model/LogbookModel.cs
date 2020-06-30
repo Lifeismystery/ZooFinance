@@ -12,23 +12,23 @@ namespace ZooFinances.Model
         {
         }
 
-        public virtual DbSet<AnimalsTable> AnimalsTable { get; set; }
-        public virtual DbSet<AnimalTypeTable> AnimalTypeTable { get; set; }
-        public virtual DbSet<FoodPriceTable> FoodPriceTable { get; set; }
+        public virtual DbSet<AnimalsEntity> AnimalsTable { get; set; }
+        public virtual DbSet<AnimalTypeEntity> AnimalTypeTable { get; set; }
+        public virtual DbSet<FoodPriceEntity> FoodPriceTable { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<AnimalTypeTable>()
+            modelBuilder.Entity<AnimalTypeEntity>()
                 .HasMany(e => e.AnimalsTable)
                 .WithRequired(e => e.AnimalTypeTable)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<FoodPriceTable>()
+            modelBuilder.Entity<FoodPriceEntity>()
                 .Property(e => e.Food_Price)
                 .HasPrecision(19, 4);
 
-            modelBuilder.Entity<FoodPriceTable>()
+            modelBuilder.Entity<FoodPriceEntity>()
                 .HasMany(e => e.AnimalTypeTable)
                 .WithRequired(e => e.FoodPriceTable)
                 .WillCascadeOnDelete(false);

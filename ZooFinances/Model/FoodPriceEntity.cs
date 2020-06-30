@@ -6,28 +6,23 @@ namespace ZooFinances.Model
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("AnimalTypeTable")]
-    public partial class AnimalTypeTable
+    [Table("FoodPriceTable")]
+    public partial class FoodPriceEntity
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public AnimalTypeTable()
+        public FoodPriceEntity()
         {
-            AnimalsTable = new HashSet<AnimalsTable>();
+            AnimalTypeTable = new HashSet<AnimalTypeEntity>();
         }
 
         [Key]
         [StringLength(50)]
-        public string Animal_Type { get; set; }
-
-        [Required]
-        [StringLength(50)]
         public string Food_Type { get; set; }
 
-        public double Food_Rate_Per_Day { get; set; }
+        [Column(TypeName = "money")]
+        public decimal Food_Price { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<AnimalsTable> AnimalsTable { get; set; }
-
-        public virtual FoodPriceTable FoodPriceTable { get; set; }
+        public virtual ICollection<AnimalTypeEntity> AnimalTypeTable { get; set; }
     }
 }

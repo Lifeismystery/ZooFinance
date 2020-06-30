@@ -7,7 +7,7 @@ namespace ZooFinances.Model
     using System.Data.Entity.Spatial;
 
     [Table("AnimalsTable")]
-    public partial class AnimalsTable
+    public partial class AnimalsEntity
     {
         public int Id { get; set; }
 
@@ -19,6 +19,6 @@ namespace ZooFinances.Model
         [StringLength(50)]
         public string Animal_Type { get; set; }
 
-        public virtual AnimalTypeTable AnimalTypeTable { get; set; }
+        public virtual AnimalTypeEntity AnimalTypeTable { get; set; }
     }
 }

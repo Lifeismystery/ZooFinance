@@ -86,9 +86,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppDate.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Model\AnimalsTable.cs" />
-    <Compile Include="Model\AnimalTypeTable.cs" />
-    <Compile Include="Model\FoodPriceTable.cs" />
+    <Compile Include="Model\AnimalsEntity.cs" />
+    <Compile Include="Model\AnimalTypeEntity.cs" />
+    <Compile Include="Model\FoodPriceEntity.cs" />
     <Compile Include="Model\LogbookModel.cs" />
     <Compile Include="Model\sysdiagrams.cs" />
     <Compile Include="View\Finances.cs">

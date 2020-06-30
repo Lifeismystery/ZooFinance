@@ -175,7 +175,7 @@ namespace ZooFinances
             // 
             // foodPriceTableBindingSource
             // 
-            this.foodPriceTableBindingSource.DataSource = typeof(ZooFinances.Model.FoodPriceTable);
+            this.foodPriceTableBindingSource.DataSource = typeof(ZooFinances.Model.FoodPriceEntity);
             // 
             // tabPage2
             // 
@@ -212,7 +212,7 @@ namespace ZooFinances
             // 
             // animalTypeTableBindingSource
             // 
-            this.animalTypeTableBindingSource.DataSource = typeof(ZooFinances.Model.AnimalTypeTable);
+            this.animalTypeTableBindingSource.DataSource = typeof(ZooFinances.Model.AnimalTypeEntity);
             // 
             // tabPage1
             // 
@@ -250,7 +250,7 @@ namespace ZooFinances
             // 
             // animalsTableBindingSource
             // 
-            this.animalsTableBindingSource.DataSource = typeof(ZooFinances.Model.AnimalsTable);
+            this.animalsTableBindingSource.DataSource = typeof(ZooFinances.Model.AnimalsEntity);
             // 
             // tabControl1
             // 
