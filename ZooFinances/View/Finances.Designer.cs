@@ -463,9 +463,6 @@ namespace ZooFinances
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitMenuItem;
-        //public BindingSource animalTypeTableBindingSource;
-        //public BindingSource animalsTableBindingSource;
-        //public BindingSource foodPriceTableBindingSource;
         private TabPage tabPage3;
         private DataGridView dataGridView3;
         private TabPage tabPage2;

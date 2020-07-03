@@ -81,11 +81,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppDate.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AppDate.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Model\AnimalsEntity.cs" />
     <Compile Include="Model\AnimalTypeEntity.cs" />
     <Compile Include="Model\FoodPriceEntity.cs" />
@@ -117,17 +112,6 @@
     </Compile>
     <None Include="..\.editorconfig">
       <Link>.editorconfig</Link>
-    </None>
-    <None Include="AppDate.xsc">
-      <DependentUpon>AppDate.xsd</DependentUpon>
-    </None>
-    <None Include="AppDate.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>AppDate.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="AppDate.xss">
-      <DependentUpon>AppDate.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\ZooFinances.Model.AnimalsTable.datasource" />
