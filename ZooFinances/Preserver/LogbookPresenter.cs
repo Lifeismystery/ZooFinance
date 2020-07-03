@@ -58,7 +58,6 @@ namespace ZooFinances.Preserver
 
         public void UpdateData()
         {
-            //_view.animalsTableBindingSource.EndEdit();
             try
             {
                 _view.animalsTableBindingSource.EndEdit();
