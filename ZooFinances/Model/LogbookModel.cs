@@ -15,7 +15,6 @@ namespace ZooFinances.Model
         public virtual DbSet<AnimalsEntity> AnimalsTable { get; set; }
         public virtual DbSet<AnimalTypeEntity> AnimalTypeTable { get; set; }
         public virtual DbSet<FoodPriceEntity> FoodPriceTable { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

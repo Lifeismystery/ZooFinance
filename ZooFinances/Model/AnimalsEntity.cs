@@ -5,6 +5,7 @@ namespace ZooFinances.Model
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using System.DirectoryServices.ActiveDirectory;
 
     [Table("AnimalsTable")]
     public partial class AnimalsEntity

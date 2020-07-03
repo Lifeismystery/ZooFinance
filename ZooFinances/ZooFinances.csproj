@@ -90,7 +90,6 @@
     <Compile Include="Model\AnimalTypeEntity.cs" />
     <Compile Include="Model\FoodPriceEntity.cs" />
     <Compile Include="Model\LogbookModel.cs" />
-    <Compile Include="Model\sysdiagrams.cs" />
     <Compile Include="View\Finances.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -34,9 +34,9 @@ namespace ZooFinances.Preserver
 
         public void LoadData()
         {
-            _model.AnimalsTable.Load();
             _model.AnimalTypeTable.Load();
             _model.FoodPriceTable.Load();
+            _model.AnimalsTable.Load();
             _view.animalTypeTableBindingSource.DataSource = _model.AnimalTypeTable.ToList();
             _view.foodPriceTableBindingSource.DataSource = _model.FoodPriceTable.ToList();
             _view.animalsTableBindingSource.DataSource = _model.AnimalsTable.ToList();
@@ -61,7 +61,11 @@ namespace ZooFinances.Preserver
             //_view.animalsTableBindingSource.EndEdit();
             try
             {
+                _view.animalsTableBindingSource.EndEdit();
+                _view.animalsTableBindingSource.ResetBindings(false);
+                _view.animalsTableBindingSource.EndEdit();
                 _model.SaveChanges();
+                _view.animalsTableBindingSource.ResetBindings(false);
             }
             catch (DbEntityValidationException ex)
             {
