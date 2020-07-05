@@ -30,22 +30,9 @@ namespace ZooFinances.Preserver
             _view.Show();
         }
 
-        //public CreateAnimalFromRow(animalRow)
-        //{
-        //    _model.AnimalsTable.an
-        //    if (animalRow,AnimalType == AnimalType.Tiger)
-        //        return new Tiger(....);
-        //    else if (animal.AnimalType == AnimalType.Pinguin)
-        //        return new Pinguin(....);
-        //    else if (animal.AnimalType == AnimalType.Pinguin)
-        //        return new Pinguin(....);
-        //}
-
-
-
         #region LoadData
 
-            public void LoadData()
+        public void LoadData()
         {
             _model.AnimalTypeTable.Load();
             _model.FoodPriceTable.Load();
@@ -107,34 +94,30 @@ namespace ZooFinances.Preserver
 
         #region Spending
 
-        public int GetAnimalByType(string animalType)
+        public Animal CreateAnimalFromTable(string animal)
         {
-            return _model.AnimalsTable.AsEnumerable().Where(p => p.AnimalType.Contains(animalType)).Count();
-        }
-
-        public double GetFoodPrice(string animalType)
-        {
-            string foodType = GetFoodPTypeByAnimalType(animalType);
-            return (double)_model.FoodPriceTable.AsEnumerable().Where(p => p.FoodType.Contains(foodType)).Select(p => p.FoodPrice).FirstOrDefault();
-        }
-
-        public string GetFoodPTypeByAnimalType(string animalType)
-        {
-            return _model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(animalType)).Select(p => p.FoodType).FirstOrDefault();
-        }
-
-        public double GetFoodRatePerDay(string animalType)
-        {
-            return _model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(animalType)).Select(p => p.FoodRatePerDay).FirstOrDefault();        
+            if (animal == AnimalType.Tiger)
+                return new Tiger(_model);
+            else if (animal == AnimalType.Penguin)
+                return new Penguin(_model);
+            else if (animal == AnimalType.Giraffe)
+                return new Giraffe(_model);
+            else return Animal.Error(animal);
         }
 
         public double Spending()
         {
-            double price = 0.0;
-            foreach (var animalType in _model.AnimalsTable.AsEnumerable().SelectMany(p => p.AnimalTypeTable.AnimalType))
+            var animals = _model.AnimalsTable.Select(x => x.AnimalType);
+            foreach (string animal in animals)
             {
-                price += GetAnimalByType(animalType.ToString()) * GetFoodPrice(animalType.ToString()) * GetFoodRatePerDay(animalType.ToString());
+                CreateAnimalFromTable(animal.ToString());
             }
+
+            double price = 0.0;
+            price += Tiger.count * Tiger.FoodPrice * Tiger.FoodRatePerDay;
+            price += Penguin.count * Penguin.FoodPrice * Penguin.FoodRatePerDay;
+            price += Giraffe.count * Giraffe.FoodPrice * Giraffe.FoodRatePerDay;
+
             return price;
         }
 

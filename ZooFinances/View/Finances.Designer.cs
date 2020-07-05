@@ -44,43 +44,48 @@ namespace ZooFinances
             this.Delete = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.animalTypeTableDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.foodPriceTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.animalTypeTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.animalTypeTableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.animalsTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.animalsTableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.foodPriceTableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.animalTypeTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.animalTypeTableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.animalsTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.animalTypeTableDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.foodPriceTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.foodPriceTableBindingSource)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.animalTypeTableBindingSource)).BeginInit();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.animalsTableBindingSource)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.animalTypeTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.animalsTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foodPriceTableBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -176,38 +181,6 @@ namespace ZooFinances
             this.dataGridView3.Size = new System.Drawing.Size(756, 438);
             this.dataGridView3.TabIndex = 4;
             // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "FoodType";
-            this.dataGridViewTextBoxColumn7.HeaderText = "FoodType";
-            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "FoodPrice";
-            this.dataGridViewTextBoxColumn8.HeaderText = "FoodPrice";
-            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Width = 125;
-            // 
-            // animalTypeTableDataGridViewTextBoxColumn1
-            // 
-            this.animalTypeTableDataGridViewTextBoxColumn1.DataPropertyName = "AnimalTypeTable";
-            this.animalTypeTableDataGridViewTextBoxColumn1.HeaderText = "AnimalTypeTable";
-            this.animalTypeTableDataGridViewTextBoxColumn1.MinimumWidth = 6;
-            this.animalTypeTableDataGridViewTextBoxColumn1.Name = "animalTypeTableDataGridViewTextBoxColumn1";
-            this.animalTypeTableDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.animalTypeTableDataGridViewTextBoxColumn1.Visible = false;
-            this.animalTypeTableDataGridViewTextBoxColumn1.Width = 125;
-            // 
-            // foodPriceTableBindingSource
-            // 
-            this.foodPriceTableBindingSource.DataSource = typeof(ZooFinances.Model.FoodPriceEntity);
-            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.dataGridView2);
@@ -243,6 +216,191 @@ namespace ZooFinances
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(756, 438);
             this.dataGridView2.TabIndex = 4;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 33);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tabPage1.Size = new System.Drawing.Size(762, 448);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "All Animals";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.dataGridView1.ColumnHeadersHeight = 29;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.dataGridViewTextBoxColumn3,
+            this.animalTypeTableDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.animalsTableBindingSource;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 5);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(756, 438);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tabControl1.Location = new System.Drawing.Point(0, 34);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(770, 485);
+            this.tabControl1.TabIndex = 6;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage4.Controls.Add(this.label7);
+            this.tabPage4.Controls.Add(this.label6);
+            this.tabPage4.Controls.Add(this.label5);
+            this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Controls.Add(this.label3);
+            this.tabPage4.Controls.Add(this.label2);
+            this.tabPage4.Controls.Add(this.textBox1);
+            this.tabPage4.Controls.Add(this.label1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 33);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tabPage4.Size = new System.Drawing.Size(762, 448);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Finances";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(372, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(73, 24);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Giraffe: ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(178, 14);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 24);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Penguins ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 14);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(68, 24);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Tigers: ";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(224, 59);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(247, 32);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(184, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Zoo spenging per day:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(89, 14);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(20, 24);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "0";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(270, 14);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(20, 24);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "0";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(451, 14);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(20, 24);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "0";
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "AnimalId";
+            this.idDataGridViewTextBoxColumn.HeaderText = "AnimalId";
+            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "AnimalName";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "AnimalName";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "AnimalType";
+            this.dataGridViewTextBoxColumn3.DataSource = this.animalTypeTableBindingSource;
+            this.dataGridViewTextBoxColumn3.DisplayMember = "AnimalType";
+            this.dataGridViewTextBoxColumn3.HeaderText = "AnimalType";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.dataGridViewTextBoxColumn3.ValueMember = "AnimalType";
+            this.dataGridViewTextBoxColumn3.Width = 125;
+            // 
+            // animalTypeTableBindingSource
+            // 
+            this.animalTypeTableBindingSource.DataSource = typeof(ZooFinances.Model.AnimalTypeEntity);
+            // 
+            // animalTypeTableDataGridViewTextBoxColumn
+            // 
+            this.animalTypeTableDataGridViewTextBoxColumn.DataPropertyName = "AnimalTypeTable";
+            this.animalTypeTableDataGridViewTextBoxColumn.HeaderText = "AnimalTypeTable";
+            this.animalTypeTableDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.animalTypeTableDataGridViewTextBoxColumn.Name = "animalTypeTableDataGridViewTextBoxColumn";
+            this.animalTypeTableDataGridViewTextBoxColumn.Visible = false;
+            this.animalTypeTableDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // animalsTableBindingSource
+            // 
+            this.animalsTableBindingSource.DataSource = typeof(ZooFinances.Model.AnimalsEntity);
             // 
             // dataGridViewTextBoxColumn4
             // 
@@ -291,139 +449,37 @@ namespace ZooFinances
             this.foodPriceTableDataGridViewTextBoxColumn.Visible = false;
             this.foodPriceTableDataGridViewTextBoxColumn.Width = 125;
             // 
-            // animalTypeTableBindingSource
+            // dataGridViewTextBoxColumn7
             // 
-            this.animalTypeTableBindingSource.DataSource = typeof(ZooFinances.Model.AnimalTypeEntity);
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "FoodType";
+            this.dataGridViewTextBoxColumn7.HeaderText = "FoodType";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Width = 125;
             // 
-            // tabPage1
+            // dataGridViewTextBoxColumn8
             // 
-            this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 33);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.tabPage1.Size = new System.Drawing.Size(762, 448);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "All Animals";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "FoodPrice";
+            this.dataGridViewTextBoxColumn8.HeaderText = "FoodPrice";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 125;
             // 
-            // dataGridView1
+            // animalTypeTableDataGridViewTextBoxColumn1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
-            this.dataGridView1.ColumnHeadersHeight = 29;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn,
-            this.dataGridViewTextBoxColumn3,
-            this.animalTypeTableDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.animalsTableBindingSource;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 5);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(756, 438);
-            this.dataGridView1.TabIndex = 6;
+            this.animalTypeTableDataGridViewTextBoxColumn1.DataPropertyName = "AnimalTypeTable";
+            this.animalTypeTableDataGridViewTextBoxColumn1.HeaderText = "AnimalTypeTable";
+            this.animalTypeTableDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.animalTypeTableDataGridViewTextBoxColumn1.Name = "animalTypeTableDataGridViewTextBoxColumn1";
+            this.animalTypeTableDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.animalTypeTableDataGridViewTextBoxColumn1.Visible = false;
+            this.animalTypeTableDataGridViewTextBoxColumn1.Width = 125;
             // 
-            // idDataGridViewTextBoxColumn
+            // foodPriceTableBindingSource
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "AnimalId";
-            this.idDataGridViewTextBoxColumn.HeaderText = "AnimalId";
-            this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "AnimalName";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "AnimalName";
-            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "AnimalType";
-            this.dataGridViewTextBoxColumn3.DataSource = this.animalTypeTableBindingSource;
-            this.dataGridViewTextBoxColumn3.DisplayMember = "AnimalType";
-            this.dataGridViewTextBoxColumn3.HeaderText = "AnimalType";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewTextBoxColumn3.ValueMember = "AnimalType";
-            this.dataGridViewTextBoxColumn3.Width = 125;
-            // 
-            // animalTypeTableDataGridViewTextBoxColumn
-            // 
-            this.animalTypeTableDataGridViewTextBoxColumn.DataPropertyName = "AnimalTypeTable";
-            this.animalTypeTableDataGridViewTextBoxColumn.HeaderText = "AnimalTypeTable";
-            this.animalTypeTableDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.animalTypeTableDataGridViewTextBoxColumn.Name = "animalTypeTableDataGridViewTextBoxColumn";
-            this.animalTypeTableDataGridViewTextBoxColumn.Visible = false;
-            this.animalTypeTableDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // animalsTableBindingSource
-            // 
-            this.animalsTableBindingSource.DataSource = typeof(ZooFinances.Model.AnimalsEntity);
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Font = new System.Drawing.Font("Calibri Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 34);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(770, 485);
-            this.tabControl1.TabIndex = 6;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage4.Controls.Add(this.textBox2);
-            this.tabPage4.Controls.Add(this.textBox1);
-            this.tabPage4.Controls.Add(this.label1);
-            this.tabPage4.Location = new System.Drawing.Point(4, 33);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.tabPage4.Size = new System.Drawing.Size(762, 448);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Finances";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(14, 83);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(740, 32);
-            this.textBox2.TabIndex = 2;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(267, 22);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(247, 32);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 27);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Zoo spenging per day:";
+            this.foodPriceTableBindingSource.DataSource = typeof(ZooFinances.Model.FoodPriceEntity);
             // 
             // Finances
             // 
@@ -444,16 +500,16 @@ namespace ZooFinances
             this.menuStrip1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.foodPriceTableBindingSource)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.animalTypeTableBindingSource)).EndInit();
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.animalsTableBindingSource)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.animalTypeTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.animalsTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.foodPriceTableBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -474,7 +530,6 @@ namespace ZooFinances
         private TextBox textBox1;
         private Label label1;
         private ToolStripMenuItem toolStripMenuItem1;
-        private TextBox textBox2;
         private ToolStripMenuItem Insert;
         private ToolStripMenuItem Update;
         private ToolStripMenuItem Delete;
@@ -501,6 +556,12 @@ namespace ZooFinances
         private DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private DataGridViewComboBoxColumn dataGridViewTextBoxColumn3;
         private DataGridViewTextBoxColumn animalTypeTableDataGridViewTextBoxColumn;
+        private Label label4;
+        private Label label3;
+        private Label label2;
+        private Label label7;
+        private Label label6;
+        private Label label5;
     }
 }
 

@@ -35,6 +35,10 @@ namespace ZooFinances
         {
             presenter.LoadData();
             textBox1.Text = string.Format(presenter.Spending() + "$");
+            //textBox2.Text = string.Format(presenter.Spending() + "$");
+            label5.Text = Tiger.count.ToString();
+            label6.Text = Penguin.count.ToString();
+            label7.Text = Giraffe.count.ToString();
         }
 
         private void Insert_Click(object sender, EventArgs e)
