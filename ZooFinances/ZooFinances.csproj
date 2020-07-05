@@ -84,11 +84,12 @@
     <Compile Include="Model\AnimalsEntity.cs" />
     <Compile Include="Model\AnimalTypeEntity.cs" />
     <Compile Include="Model\FoodPriceEntity.cs" />
-    <Compile Include="Preserver\Giraffe.cs" />
+    <Compile Include="Preserver\Animal\Giraffe.cs" />
     <Compile Include="Model\LogbookModel.cs" />
-    <Compile Include="Preserver\Penguin.cs" />
-    <Compile Include="Preserver\Tiger.cs" />
-    <Compile Include="Preserver\Animal.cs" />
+    <Compile Include="Preserver\Animal\Penguin.cs" />
+    <Compile Include="Preserver\Animal\Tiger.cs" />
+    <Compile Include="Preserver\Animal\Animal.cs" />
+    <Compile Include="Preserver\Food\Food.cs" />
     <Compile Include="View\Finances.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -1,12 +1,7 @@
-﻿using System;
-using System.ComponentModel;
-using System.Data;
+﻿using System.Data;
 using System.Data.Entity;
-using System.Data.Entity.Core.Objects.DataClasses;
 using System.Data.Entity.Validation;
-using System.Data.Objects.DataClasses;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using ZooFinances.Model;
 

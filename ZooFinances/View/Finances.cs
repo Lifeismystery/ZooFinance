@@ -1,15 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Data.SqlClient;
-using System.Linq;
 using System.Windows.Forms;
 using ZooFinances.Preserver;
-using System.Runtime.Remoting.Messaging;
-using ZooFinances.Model;
-using System.Collections.ObjectModel;
-using System.Collections.Specialized;
 
 namespace ZooFinances
 {
