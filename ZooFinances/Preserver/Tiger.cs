@@ -20,14 +20,9 @@ namespace ZooFinances.Model
         public Tiger(LogbookModel model)
         {
             count++;
-            FoodType = model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(AnimalType.Tiger)).Select(p => p.FoodType).FirstOrDefault();
+            FoodType = model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(Animal.Tiger)).Select(p => p.FoodType).FirstOrDefault();
             FoodPrice = (double)model.FoodPriceTable.AsEnumerable().Where(p => p.FoodType.Contains(FoodType)).Select(p => p.FoodPrice).FirstOrDefault();
-            FoodRatePerDay = model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(AnimalType.Tiger)).Select(p => p.FoodRatePerDay).FirstOrDefault();
-        }
-
-        public static void ShowNumberOfObjects()
-        {
-            Console.WriteLine("Tiger = {0}", Tiger.count.ToString());
+            FoodRatePerDay = model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(Animal.Tiger)).Select(p => p.FoodRatePerDay).FirstOrDefault();
         }
     }
 }

@@ -20,13 +20,9 @@ namespace ZooFinances.Model
         public Penguin(LogbookModel model)
         {
             count++;
-            FoodType = model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(AnimalType.Penguin)).Select(p => p.FoodType).FirstOrDefault();
+            FoodType = model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(Animal.Penguin)).Select(p => p.FoodType).FirstOrDefault();
             FoodPrice = (double)model.FoodPriceTable.AsEnumerable().Where(p => p.FoodType.Contains(FoodType)).Select(p => p.FoodPrice).FirstOrDefault();
-            FoodRatePerDay = model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(AnimalType.Penguin)).Select(p => p.FoodRatePerDay).FirstOrDefault();
-        }
-        public static void ShowNumberOfObjects()
-        {
-            Console.WriteLine("Penguin = {0}", Penguin.count.ToString());
+            FoodRatePerDay = model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(Animal.Penguin)).Select(p => p.FoodRatePerDay).FirstOrDefault();
         }
     }
 }

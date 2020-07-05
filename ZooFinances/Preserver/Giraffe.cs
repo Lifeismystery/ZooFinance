@@ -20,13 +20,9 @@ namespace ZooFinances.Model
         public Giraffe(LogbookModel model)
         {
             count++;
-            FoodType = model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(AnimalType.Giraffe)).Select(p => p.FoodType).FirstOrDefault();
+            FoodType = model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(Animal.Giraffe)).Select(p => p.FoodType).FirstOrDefault();
             FoodPrice = (double)model.FoodPriceTable.AsEnumerable().Where(p => p.FoodType.Contains(FoodType)).Select(p => p.FoodPrice).FirstOrDefault();
-            FoodRatePerDay = model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(AnimalType.Giraffe)).Select(p => p.FoodRatePerDay).FirstOrDefault();
-        }
-        public static void ShowNumberOfObjects()
-        {
-            Console.WriteLine("Giraffe = {0}", Giraffe.count.ToString());
+            FoodRatePerDay = model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(Animal.Giraffe)).Select(p => p.FoodRatePerDay).FirstOrDefault();
         }
     }
 }

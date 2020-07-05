@@ -96,11 +96,11 @@ namespace ZooFinances.Preserver
 
         public Animal CreateAnimalFromTable(string animal)
         {
-            if (animal == AnimalType.Tiger)
+            if (animal == Animal.Tiger)
                 return new Tiger(_model);
-            else if (animal == AnimalType.Penguin)
+            else if (animal == Animal.Penguin)
                 return new Penguin(_model);
-            else if (animal == AnimalType.Giraffe)
+            else if (animal == Animal.Giraffe)
                 return new Giraffe(_model);
             else return Animal.Error(animal);
         }
