@@ -10,15 +10,16 @@ namespace ZooFinances.Model
     [Table("AnimalsTable")]
     public partial class AnimalsEntity
     {
-        public int Id { get; set; }
+        [Key]
+        public int AnimalId { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string Name { get; set; }
+        public string AnimalName { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string Animal_Type { get; set; }
+        public string AnimalType { get; set; }
 
         public virtual AnimalTypeEntity AnimalTypeTable { get; set; }
     }

@@ -17,13 +17,13 @@ namespace ZooFinances.Model
 
         [Key]
         [StringLength(50)]
-        public string Animal_Type { get; set; }
+        public string AnimalType { get; set; }
 
         [Required]
         [StringLength(50)]
-        public string Food_Type { get; set; }
+        public string FoodType { get; set; }
 
-        public double Food_Rate_Per_Day { get; set; }
+        public double FoodRatePerDay { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<AnimalsEntity> AnimalsTable { get; set; }

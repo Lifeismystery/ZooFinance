@@ -24,7 +24,7 @@ namespace ZooFinances.Model
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<FoodPriceEntity>()
-                .Property(e => e.Food_Price)
+                .Property(e => e.FoodPrice)
                 .HasPrecision(19, 4);
 
             modelBuilder.Entity<FoodPriceEntity>()

@@ -178,8 +178,8 @@ namespace ZooFinances
             // 
             // dataGridViewTextBoxColumn7
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Food_Type";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Food_Type";
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "FoodType";
+            this.dataGridViewTextBoxColumn7.HeaderText = "FoodType";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
             this.dataGridViewTextBoxColumn7.ReadOnly = true;
@@ -187,8 +187,8 @@ namespace ZooFinances
             // 
             // dataGridViewTextBoxColumn8
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Food_Price";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Food_Price";
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "FoodPrice";
+            this.dataGridViewTextBoxColumn8.HeaderText = "FoodPrice";
             this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             this.dataGridViewTextBoxColumn8.ReadOnly = true;
@@ -246,8 +246,8 @@ namespace ZooFinances
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Animal_Type";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Animal_Type";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "AnimalType";
+            this.dataGridViewTextBoxColumn4.HeaderText = "AnimalType";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
@@ -255,8 +255,8 @@ namespace ZooFinances
             // 
             // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Food_Type";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Food_Type";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "FoodType";
+            this.dataGridViewTextBoxColumn5.HeaderText = "FoodType";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.ReadOnly = true;
@@ -264,8 +264,8 @@ namespace ZooFinances
             // 
             // dataGridViewTextBoxColumn6
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Food_Rate_Per_Day";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Food_Rate_Per_Day";
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "FoodRatePerDay";
+            this.dataGridViewTextBoxColumn6.HeaderText = "FoodRatePerDay";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
@@ -331,31 +331,31 @@ namespace ZooFinances
             // 
             // idDataGridViewTextBoxColumn
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "AnimalId";
+            this.idDataGridViewTextBoxColumn.HeaderText = "AnimalId";
             this.idDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
             this.idDataGridViewTextBoxColumn.Width = 125;
             // 
             // nameDataGridViewTextBoxColumn
             // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "AnimalName";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "AnimalName";
             this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
             this.nameDataGridViewTextBoxColumn.Width = 125;
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Animal_Type";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "AnimalType";
             this.dataGridViewTextBoxColumn3.DataSource = this.animalTypeTableBindingSource;
-            this.dataGridViewTextBoxColumn3.DisplayMember = "Animal_Type";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Animal_Type";
+            this.dataGridViewTextBoxColumn3.DisplayMember = "AnimalType";
+            this.dataGridViewTextBoxColumn3.HeaderText = "AnimalType";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.dataGridViewTextBoxColumn3.ValueMember = "Animal_Type";
+            this.dataGridViewTextBoxColumn3.ValueMember = "AnimalType";
             this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // animalTypeTableDataGridViewTextBoxColumn

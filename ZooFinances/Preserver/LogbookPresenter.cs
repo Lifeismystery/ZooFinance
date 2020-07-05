@@ -30,9 +30,22 @@ namespace ZooFinances.Preserver
             _view.Show();
         }
 
+        //public CreateAnimalFromRow(animalRow)
+        //{
+        //    _model.AnimalsTable.an
+        //    if (animalRow,AnimalType == AnimalType.Tiger)
+        //        return new Tiger(....);
+        //    else if (animal.AnimalType == AnimalType.Pinguin)
+        //        return new Pinguin(....);
+        //    else if (animal.AnimalType == AnimalType.Pinguin)
+        //        return new Pinguin(....);
+        //}
+
+
+
         #region LoadData
 
-        public void LoadData()
+            public void LoadData()
         {
             _model.AnimalTypeTable.Load();
             _model.FoodPriceTable.Load();
@@ -96,29 +109,29 @@ namespace ZooFinances.Preserver
 
         public int GetAnimalByType(string animalType)
         {
-            return _model.AnimalsTable.AsEnumerable().Where(p => p.Animal_Type.Contains(animalType)).Count();
+            return _model.AnimalsTable.AsEnumerable().Where(p => p.AnimalType.Contains(animalType)).Count();
         }
 
         public double GetFoodPrice(string animalType)
         {
             string foodType = GetFoodPTypeByAnimalType(animalType);
-            return (double)_model.FoodPriceTable.AsEnumerable().Where(p => p.Food_Type.Contains(foodType)).Select(p => p.Food_Price).FirstOrDefault();
+            return (double)_model.FoodPriceTable.AsEnumerable().Where(p => p.FoodType.Contains(foodType)).Select(p => p.FoodPrice).FirstOrDefault();
         }
 
         public string GetFoodPTypeByAnimalType(string animalType)
         {
-            return _model.AnimalTypeTable.AsEnumerable().Where(p => p.Animal_Type.Contains(animalType)).Select(p => p.Food_Type).FirstOrDefault();
+            return _model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(animalType)).Select(p => p.FoodType).FirstOrDefault();
         }
 
         public double GetFoodRatePerDay(string animalType)
         {
-            return _model.AnimalTypeTable.AsEnumerable().Where(p => p.Animal_Type.Contains(animalType)).Select(p => p.Food_Rate_Per_Day).FirstOrDefault();        
+            return _model.AnimalTypeTable.AsEnumerable().Where(p => p.AnimalType.Contains(animalType)).Select(p => p.FoodRatePerDay).FirstOrDefault();        
         }
 
         public double Spending()
         {
             double price = 0.0;
-            foreach (var animalType in _model.AnimalsTable.AsEnumerable().SelectMany(p => p.AnimalTypeTable.Animal_Type))
+            foreach (var animalType in _model.AnimalsTable.AsEnumerable().SelectMany(p => p.AnimalTypeTable.AnimalType))
             {
                 price += GetAnimalByType(animalType.ToString()) * GetFoodPrice(animalType.ToString()) * GetFoodRatePerDay(animalType.ToString());
             }
